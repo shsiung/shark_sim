@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grid", "aStar\Grid.csproj", "{DCC31F53-A1FF-4741-8F2E-E59CB2DA384B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharkGrid", "MinotaurPathfinder\SharkGrid.csproj", "{A5A81B96-73CD-41DC-9E3A-B484961C7445}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DCC31F53-A1FF-4741-8F2E-E59CB2DA384B} = {DCC31F53-A1FF-4741-8F2E-E59CB2DA384B}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCC31F53-A1FF-4741-8F2E-E59CB2DA384B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCC31F53-A1FF-4741-8F2E-E59CB2DA384B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCC31F53-A1FF-4741-8F2E-E59CB2DA384B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCC31F53-A1FF-4741-8F2E-E59CB2DA384B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5A81B96-73CD-41DC-9E3A-B484961C7445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5A81B96-73CD-41DC-9E3A-B484961C7445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5A81B96-73CD-41DC-9E3A-B484961C7445}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5A81B96-73CD-41DC-9E3A-B484961C7445}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

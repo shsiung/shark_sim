@@ -1,0 +1,20 @@
+c:\users\hannahkastein\documents\visual studio 2012\Projects\aStar\aStar\bin\Debug\aStar.exe.config
+C:\Users\hannahkastein\Documents\Visual Studio 2012\Projects\aStar\aStar\obj\Debug\aStar.csprojResolveAssemblyReference.cache
+C:\Users\CAPCOM\Documents\GitHub\a-planner\aStar\bin\Debug\AStar.dll.config
+C:\Users\CAPCOM\Documents\GitHub\a-planner\aStar\bin\Debug\AStar.XML
+C:\Users\CAPCOM\Documents\GitHub\a-planner\aStar\bin\Debug\AStar.dll
+C:\Users\CAPCOM\Documents\GitHub\a-planner\aStar\bin\Debug\AStar.pdb
+C:\Users\CAPCOM\Documents\GitHub\a-planner\aStar\bin\Debug\C5.dll
+C:\Users\CAPCOM\Documents\GitHub\a-planner\aStar\obj\Debug\AStar.dll
+C:\Users\CAPCOM\Documents\GitHub\a-planner\aStar\obj\Debug\AStar.pdb
+\\psf\Home\Desktop\HMC\SharkTracking\a-planner\aStar\bin\Debug\AStar.dll.config
+\\psf\Home\Desktop\HMC\SharkTracking\a-planner\aStar\bin\Debug\AStar.XML
+\\psf\Home\Desktop\HMC\SharkTracking\a-planner\aStar\bin\Debug\AStar.dll
+\\psf\Home\Desktop\HMC\SharkTracking\a-planner\aStar\bin\Debug\AStar.pdb
+\\psf\Home\Desktop\HMC\SharkTracking\a-planner\aStar\bin\Debug\C5.dll
+\\psf\Home\Desktop\HMC\SharkTracking\a-planner\aStar\obj\Debug\aStar.csprojResolveAssemblyReference.cache
+\\psf\Home\Desktop\HMC\SharkTracking\a-planner\aStar\obj\Debug\AStar.dll
+\\psf\Home\Desktop\HMC\SharkTracking\a-planner\aStar\obj\Debug\AStar.pdb
+\\psf\Home\Desktop\HMC\SharkTracking\a-planner\aStar\bin\Debug\CsvHelper.dll
+\\psf\Home\Desktop\HMC\SharkTracking\a-planner\aStar\bin\Debug\CsvHelper.pdb
+\\psf\Home\Desktop\HMC\SharkTracking\a-planner\aStar\bin\Debug\CsvHelper.xml

@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AStar</name>
+    </assembly>
+    <members>
+        <member name="T:Grid.Grid">
+            <summary>
+            Map represented as a grid of cells.
+            </summary>
+        </member>
+        <member name="F:Grid.Grid.Fast">
+            <summary>
+            If set to true, uses Manhattan distance as heuristic.
+            </summary>
+        </member>
+        <member name="M:Grid.Grid.#ctor(System.Drawing.Point)">
+            <summary>
+            Construct a grid map.
+            </summary>
+            <param name="dimensions">Width and height of map.</param>
+        </member>
+        <member name="M:Grid.Grid.Initialize">
+            <summary>
+            Set the start and goal.
+            </summary>
+        </member>
+        <member name="M:Grid.Grid.ValidCell(System.Drawing.Point)">
+            <summary>
+            Checks if a cell is within the bounds of the map, not already checked and not an obstacle.
+            </summary>
+            <param name="p">Cartesian coordinate of the cell.</param>
+            <returns>True if p satisfies the conditions described.</returns>
+        </member>
+        <member name="M:Grid.Grid.ValidCellExplored(System.Drawing.Point)">
+            <summary>
+            Same as above but for exploration....need to fix this
+            </summary>
+            <param name="p">Cartesian coordinate of the cell.</param>
+            <returns>True if p satisfies the conditions described.</returns>
+        </member>
+        <member name="M:Grid.Grid.Neighbours(System.Drawing.Point)">
+            <summary>
+            </summary>
+            <param name="p">Cartesian coordinate of the cell.</param>
+            <returns>The neighbours of p excluding those that are already checked.</returns>
+        </member>
+        <member name="M:Grid.Grid.Cell(System.Drawing.Point)">
+            <summary>
+            Use to get and set properties of a cell in the grid.
+            </summary>
+            <param name="p">Cartesian Coordinate of cell.</param>
+            <returns>GridCell at point p.</returns>
+        </member>
+        <member name="M:Grid.Grid.Ascii">
+            <summary>
+            </summary>
+            <returns>ASCII representation of grid map.</returns>
+        </member>
+        <member name="F:Grid.GridCell.XY">
+            <summary>
+            Cartesian coordinates of cell.
+            </summary>
+        </member>
+        <member name="F:Grid.GridCell.Parent">
+            <summary>
+            The cell traversed before the current cell in the optimal path.
+            </summary>
+        </member>
+        <member name="F:Grid.GridCell.G">
+            <summary>
+            Cost to get to cell from start.
+            </summary>
+        </member>
+        <member name="F:Grid.GridCell.H">
+            <summary>
+            Straigh line distance from cell to goal.
+            </summary>
+        </member>
+        <member name="F:Grid.GridCell.Explored">
+            <summary>
+            How many times being visited
+            </summary>
+        </member>
+        <member name="F:Grid.GridCell.Neighbors">
+            <summary>
+            How many neighbors the cell has
+            </summary>
+        </member>
+        <member name="F:Grid.GridCell.Use">
+            <summary>
+            True if cell is part of an optimal path.
+            </summary>
+        </member>
+        <member name="F:Grid.GridCell.Checked">
+            <summary>
+            True if cell has already been checked.
+            </summary>
+        </member>
+        <member name="F:Grid.GridCell.Obstacle">
+            <summary>
+            True if cell is an obstacle.
+            </summary>
+        </member>
+        <member name="F:Grid.GridCell.Start">
+            <summary>
+            True if cell is start.
+            </summary>
+        </member>
+        <member name="F:Grid.GridCell.Goal">
+            <summary>
+            True if cell is goal.
+            </summary>
+        </member>
+        <member name="F:Grid.GridCell.Handle">
+            <summary>
+            Handle (reference) for modifying GridCell when it's in the priority queue.
+            </summary>
+        </member>
+        <member name="M:Grid.GridCell.#ctor(System.Drawing.Point,System.Boolean)">
+            <summary>
+            Construct a GridCell.
+            </summary>
+            <param name="xy">Coordinates of cell.</param>
+            <param name="obstacle">True if cell is an obstacle.</param>
+        </member>
+        <member name="M:Grid.GridMap.#ctor(System.Drawing.Point,System.Boolean)">
+            <summary>
+            Construct a planner object. Initial map is free of obstacles.
+            </summary>
+            <param name="dimensions">Width and height of map.</param>
+            /// <param name="allFourQuandrants">Set to true to use all quadrants in cartesian coordinates</param>
+        </member>
+        <member name="M:Grid.GridMap.printTran">
+            <summary>
+            For debugging
+            </summary>
+        </member>
+        <member name="M:Grid.GridMap.AddObstacle(System.Collections.Generic.HashSet{System.Drawing.Point})">
+            <summary>
+            Add a set of obstacles.
+            </summary>
+            <param name="obstacles">The set of cartesian coordinates of cells 
+            to set as obstacles.</param>
+        </member>
+        <member name="M:Grid.GridMap.RemoveObstacle(System.Collections.Generic.HashSet{System.Drawing.Point})">
+            <summary>
+            Remove a set of obstacles
+            </summary>
+            <param name="obstacles">The set of cartesian coordinates of cells to 
+            unset as obstacles.</param>
+        </member>
+        <member name="M:Grid.GridMap.AddObstacle(System.Drawing.Point)">
+            <summary>
+            Add a single obstacle.
+            </summary>
+            <param name="p">The cartesian coordinate of cell to set as obstacles.</param>
+        </member>
+        <member name="M:Grid.GridMap.RemoveObstacle(System.Drawing.Point)">
+            <summary>
+            Remove a single obstacle.
+            </summary>
+            <param name="p"> Cartesian coordinate of cell to unset as obstacles.</param>
+        </member>
+        <member name="M:Grid.GridMap.ToggleObstacle(System.Drawing.Point)">
+            <summary>
+            Toggle the obstacle state of a cell, only work on cells that are not start or end cells.
+            </summary>
+            <param name="p">Cartesian coordinates of cell to toggle.</param>
+        </member>
+        <member name="M:Grid.GridMap.Ascii">
+            <summary>
+            ASCII rendition of map.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Grid.GridMap.Obstacle(System.Drawing.Point)">
+            <summary>
+            Check if a cell in the map is an obstacle.
+            </summary>
+            <param name="p">The cartesian coordinate of the cell.</param>
+            <returns>True if cell is an obstacle.</returns>
+        </member>
+    </members>
+</doc>
